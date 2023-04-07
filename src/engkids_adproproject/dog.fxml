@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="engkids_adproproject.DogController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../backg1_1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="150.0" layoutX="437.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../eng.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="278.0" layoutX="36.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../button12.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="59.0" layoutY="34.0" text="welcome">
+               <font>
+                  <Font name="Segoe Print" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="username" layoutX="169.0" layoutY="32.0" prefHeight="36.0" prefWidth="186.0">
+               <font>
+                  <Font name="Segoe Print" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="164.0" layoutX="651.0" layoutY="27.0">
+               <image>
+                  <Image url="@../image/stars.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="homebutton" fitHeight="64.0" fitWidth="70.0" layoutX="915.0" layoutY="23.0" onMouseClicked="#homebuttonMouseclic" onMouseEntered="#homebuttonMouseEnter" onMouseExited="#homebuttonExite" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/homebutton.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="461.0" layoutY="351.0" prefHeight="100.0" prefWidth="200.0" />
+      <Label layoutX="321.0" layoutY="148.0" text="choose the corect animal:" textFill="#22b784">
+         <font>
+            <Font name="Forte" size="36.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rec1" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="299.0" layoutX="50.0" layoutY="302.0" onMouseEntered="#rec1En" onMouseExited="#rec1Ex" opacity="0.83" stroke="#1b6b18" strokeType="INSIDE" strokeWidth="2.0" width="222.0" />
+      <Rectangle fx:id="rec2" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="299.0" layoutX="285.0" layoutY="302.0" onMouseEntered="#rec2En" onMouseExited="#rec2Ex" opacity="0.83" stroke="#1b6b18" strokeType="INSIDE" strokeWidth="2.0" width="222.0" />
+      <Rectangle fx:id="rec3" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="299.0" layoutX="518.0" layoutY="302.0" onMouseEntered="#rec3En" onMouseExited="#rec3Ex" opacity="0.83" stroke="#1b6b18" strokeType="INSIDE" strokeWidth="2.0" width="222.0" />
+      <ImageView fx:id="zar" fitHeight="219.0" fitWidth="186.0" layoutX="303.0" layoutY="342.0" onMouseClicked="#play_wrong_sound" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../animals%20(1)/lion2.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rec4" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="299.0" layoutX="752.0" layoutY="302.0" onMouseEntered="#rec4En" onMouseExited="#rec4Ex" opacity="0.83" stroke="#1b6b18" strokeType="INSIDE" strokeWidth="2.0" width="222.0" />
+      <ImageView fx:id="dog" fitHeight="195.0" fitWidth="207.0" layoutX="771.0" layoutY="351.0" onMouseClicked="#play_wrong_sound" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../animals%20(1)/rappitt.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cat" fitHeight="200.0" fitWidth="164.0" layoutX="63.0" layoutY="348.0" onMouseClicked="#play_wrong_sound">
+         <image>
+            <Image url="@../animals%20(1)/catt.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sheep" fitHeight="219.0" fitWidth="222.0" layoutX="516.0" layoutY="350.0" onMouseClicked="#playyaysound">
+         <image>
+            <Image url="@../animals%20(1)/Please.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="673.0" layoutY="37.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="emptyStar1" fitHeight="31.0" fitWidth="32.0" visible="false">
+               <image>
+                  <Image url="@../‏‏star2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emptyStar2" fitHeight="31.0" fitWidth="32.0" visible="false">
+               <image>
+                  <Image url="@../‏‏star2.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="emptyStar3" fitHeight="31.0" fitWidth="32.0" visible="false">
+               <image>
+                  <Image url="@../‏‏star2.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="13.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label fx:id="lbResult" layoutX="350.0" layoutY="605.0" prefHeight="100.0" prefWidth="357.0" textFill="#22b784">
+         <font>
+            <Font name="Segoe Print" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="replayButton" fitHeight="46.0" fitWidth="49.0" layoutX="458.0" layoutY="690.0" onMouseClicked="#rePlayGame" visible="false">
+         <image>
+            <Image url="@../image/REPLAYBUTTON.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backButton" fitHeight="46.0" fitWidth="49.0" layoutX="537.0" layoutY="690.0" onMouseClicked="#closeGame" visible="false">
+         <image>
+            <Image url="@../image/backbutton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

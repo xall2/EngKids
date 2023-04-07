@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#enter" prefHeight="768.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="engkids_adproproject.ClothesController">
+    <stylesheets>
+        <URL value="@abcd.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1027.0">
+         <image>
+            <Image url="@../backg1_1.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1f9fb" height="516.0" layoutX="80.0" layoutY="178.0" opacity="0.82" stroke="#71c8b0" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="849.0" />
+      <VBox layoutX="37.0" layoutY="166.0" prefHeight="340.0" prefWidth="343.0">
+         <children>
+            <HBox prefHeight="263.0" prefWidth="900.0">
+               <children>
+                  <StackPane onMouseEntered="#bt1Enter" onMouseExited="#bt1Exit" prefHeight="286.0" prefWidth="253.0">
+                     <children>
+                        <ImageView fx:id="chirt" fitHeight="171.0" fitWidth="171.0" onMouseEntered="#chirtEnter" onMouseExited="#chirtExit">
+                           <image>
+                              <Image url="@../t-shirt.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Button fx:id="btChirt" mnemonicParsing="false" onAction="#btChirtEvent" opacity="0.0" prefHeight="97.0" prefWidth="112.0" style="-fx-background-color: black;" text=" " textFill="#21138f00">
+                           <effect>
+                              <Lighting diffuseConstant="1.51" specularConstant="0.64" specularExponent="23.41" surfaceScale="2.72">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="237.07" elevation="49.39" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="298.0" layoutY="166.0" prefHeight="340.0" prefWidth="343.0">
+         <children>
+            <HBox prefHeight="263.0" prefWidth="900.0">
+               <children>
+                  <StackPane prefHeight="286.0" prefWidth="253.0">
+                     <children>
+                        <ImageView fx:id="jens" fitHeight="158.0" fitWidth="158.0" onMouseEntered="#jinsEnter" onMouseExited="#jinsExit">
+                           <image>
+                              <Image url="@../pants.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#btJensEvent" opacity="0.0" prefHeight="93.0" prefWidth="117.0" style="-fx-background-color: white; -fx-background-radius: 10;" text=" ">
+                           <effect>
+                              <Lighting diffuseConstant="1.51" specularConstant="0.64" specularExponent="23.41" surfaceScale="2.72">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="237.07" elevation="49.39" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="569.0" layoutY="159.0" prefHeight="340.0" prefWidth="343.0">
+         <children>
+            <HBox prefHeight="263.0" prefWidth="900.0">
+               <children>
+                  <StackPane prefHeight="286.0" prefWidth="253.0">
+                     <children>
+                        <ImageView fx:id="bag" fitHeight="149.0" fitWidth="149.0" onMouseEntered="#bagEnter" onMouseExited="#bagExit">
+                           <image>
+                              <Image url="@../school-bag.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#btBagEvent" opacity="0.0" prefHeight="92.0" prefWidth="106.0" style="-fx-background-color: white; -fx-background-radius: 10;" text=" " textFill="TRANSPARENT">
+                           <effect>
+                              <Lighting diffuseConstant="1.51" specularConstant="0.64" specularExponent="23.41" surfaceScale="2.72">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="237.07" elevation="49.39" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="37.0" layoutY="404.0" prefHeight="298.0" prefWidth="343.0">
+         <children>
+            <HBox prefHeight="263.0" prefWidth="900.0">
+               <children>
+                  <StackPane prefHeight="286.0" prefWidth="253.0">
+                     <children>
+                        <ImageView fx:id="skirt" fitHeight="158.0" fitWidth="158.0" onMouseEntered="#skirtEnter" onMouseExited="#skirtExit">
+                           <image>
+                              <Image url="@../gored-skirt.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#btSkirtEvent" opacity="0.0" prefHeight="101.0" prefWidth="127.0" style="-fx-background-color: white; -fx-background-radius: 10;" text=" ">
+                           <effect>
+                              <Lighting diffuseConstant="1.51" specularConstant="0.64" specularExponent="23.41" surfaceScale="2.72">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="237.07" elevation="49.39" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="298.0" layoutY="413.0" prefHeight="281.0" prefWidth="343.0">
+         <children>
+            <HBox prefHeight="263.0" prefWidth="900.0">
+               <children>
+                  <StackPane prefHeight="286.0" prefWidth="253.0">
+                     <children>
+                        <ImageView fx:id="boot" fitHeight="182.0" fitWidth="182.0" onMouseEntered="#bootEnter" onMouseExited="#bootExit">
+                           <image>
+                              <Image url="@../baby-shoes.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#btShoseEvent" opacity="0.0" prefHeight="89.0" prefWidth="112.0" style="-fx-background-color: white; -fx-background-radius: 10;" text=" ">
+                           <effect>
+                              <Lighting diffuseConstant="1.51" specularConstant="0.64" specularExponent="23.41" surfaceScale="2.72">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="237.07" elevation="49.39" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="569.0" layoutY="413.0" prefHeight="281.0" prefWidth="343.0">
+         <children>
+            <HBox prefHeight="263.0" prefWidth="900.0">
+               <children>
+                  <StackPane prefHeight="286.0" prefWidth="253.0">
+                     <children>
+                        <ImageView fx:id="drees" fitHeight="155.0" fitWidth="155.0" onMouseEntered="#dressEnter" onMouseExited="#dressExit">
+                           <image>
+                              <Image url="@../dress.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets left="15.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#btDressEvent" opacity="0.0" prefHeight="89.0" prefWidth="112.0" style="-fx-background-color: white; -fx-background-radius: 10;" text=" ">
+                           <effect>
+                              <Lighting diffuseConstant="1.51" specularConstant="0.64" specularExponent="23.41" surfaceScale="2.72">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="237.07" elevation="49.39" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="redColor" layoutX="940.0" layoutY="265.0" mnemonicParsing="false" onAction="#redColorEvent" onMouseEntered="#redEn" onMouseExited="#redEx" prefHeight="68.0" prefWidth="70.0" style="-fx-background-color: red; -fx-background-radius: 20;" text=" " textFill="RED">
+         <effect>
+            <Lighting diffuseConstant="1.42" specularConstant="0.4" specularExponent="0.0" surfaceScale="2.84">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="216.22" elevation="36.21" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="yelllowColor" layoutX="940.0" layoutY="353.0" mnemonicParsing="false" onAction="#yelllowColorEvent" onMouseEntered="#yeelowEn" onMouseExited="#yeelowEx" prefHeight="68.0" prefWidth="70.0" style="-fx-background-color: yellow; -fx-background-radius: 20;" text=" " textFill="RED">
+         <effect>
+            <Lighting diffuseConstant="1.59" specularConstant="0.4" specularExponent="0.0" surfaceScale="2.84">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="216.22" elevation="36.21" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="greenColor" layoutX="940.0" layoutY="444.0" mnemonicParsing="false" onAction="#greenColorEvent" onMouseEntered="#greenEn" onMouseExited="#greenEx" prefHeight="68.0" prefWidth="70.0" style="-fx-background-color: green; -fx-background-radius: 20;" text=" " textFill="RED">
+         <effect>
+            <Lighting diffuseConstant="1.42" specularConstant="0.4" specularExponent="0.0" surfaceScale="5.52">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="159.15" elevation="36.21" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="orangColor" layoutX="940.0" layoutY="536.0" mnemonicParsing="false" onAction="#orangColorEvent" onMouseEntered="#orangEn" onMouseExited="#orangEx" prefHeight="68.0" prefWidth="70.0" style="-fx-background-color: orange; -fx-background-radius: 20;" text=" " textFill="RED">
+         <effect>
+            <Lighting diffuseConstant="1.59" specularConstant="0.4" specularExponent="0.0" surfaceScale="2.84">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="216.22" elevation="36.21" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="blueColor" layoutX="940.0" layoutY="622.0" mnemonicParsing="false" onAction="#blueColorEvent" onMouseEntered="#blueEn" onMouseExited="#blueEx" prefHeight="68.0" prefWidth="70.0" style="-fx-background-color: blue; -fx-background-radius: 20;" text=" " textFill="RED">
+         <effect>
+            <Lighting diffuseConstant="1.13" specularConstant="0.4" specularExponent="0.0" surfaceScale="2.68">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="216.22" elevation="36.21" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="purpleColor" layoutX="940.0" layoutY="181.0" mnemonicParsing="false" onAction="#purpleColorEvent" onMouseEntered="#purpulEn" onMouseExited="#purpulEx" prefHeight="68.0" prefWidth="70.0" style="-fx-background-color: purple; -fx-background-radius: 20;" text=" " textFill="RED">
+         <effect>
+            <Lighting diffuseConstant="1.42" specularConstant="0.4" specularExponent="0.0" surfaceScale="2.84">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="216.22" elevation="36.21" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fx:id="rRed" fitHeight="129.0" fitWidth="106.0" layoutX="46.0" layoutY="626.0">
+         <image>
+            <Image url="@../rabb1.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.51" specularConstant="0.35" specularExponent="26.83" surfaceScale="1.99">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="145.97" elevation="124.02" />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="rYellow" fitHeight="97.0" fitWidth="89.0" layoutX="12.0" layoutY="662.0">
+         <image>
+            <Image url="@../ca2.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.51" specularConstant="0.35" specularExponent="26.83" surfaceScale="1.99">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="145.97" elevation="124.02" />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="150.0" layoutX="437.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../eng.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="278.0" layoutX="36.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../button12.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="59.0" layoutY="34.0" text="welcome">
+               <font>
+                  <Font name="Segoe Print" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="username" layoutX="169.0" layoutY="32.0" prefHeight="36.0" prefWidth="186.0">
+               <font>
+                  <Font name="Segoe Print" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="164.0" layoutX="651.0" layoutY="27.0">
+               <image>
+                  <Image url="@../image/stars.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="homebutton" fitHeight="64.0" fitWidth="70.0" layoutX="915.0" layoutY="23.0" onMouseClicked="#homebuttonMouseclic" onMouseEntered="#homebuttonMouseEnter" onMouseExited="#homebuttonExite" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/homebutton.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="673.0" layoutY="37.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="emptyStar1" fitHeight="31.0" fitWidth="32.0" visible="false">
+               <image>
+                  <Image url="@../‏‏star2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emptyStar2" fitHeight="31.0" fitWidth="32.0" visible="false">
+               <image>
+                  <Image url="@../‏‏star2.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="emptyStar3" fitHeight="31.0" fitWidth="32.0" visible="false">
+               <image>
+                  <Image url="@../‏‏star2.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="13.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

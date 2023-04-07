@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="engkids_adproproject.PencilController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0">
+         <image>
+            <Image url="@../backg1_1.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rec1" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="363.0" layoutX="40.0" layoutY="208.0" onMouseEntered="#rec1En" onMouseExited="#rec1Ex" opacity="0.83" stroke="#1b6b18" strokeType="INSIDE" strokeWidth="2.0" width="185.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="133.0" layoutX="116.0" layoutY="436.0" opacity="0.61" stroke="#006e6500" strokeType="INSIDE" visible="false" width="156.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="133.0" layoutX="291.0" layoutY="437.0" opacity="0.61" stroke="#006e6500" strokeType="INSIDE" visible="false" width="156.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="133.0" layoutX="460.0" layoutY="437.0" opacity="0.61" stroke="#006e6500" strokeType="INSIDE" visible="false" width="156.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="133.0" layoutX="628.0" layoutY="437.0" opacity="0.61" stroke="#006e6500" strokeType="INSIDE" visible="false" width="156.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="133.0" layoutX="804.0" layoutY="437.0" opacity="0.61" stroke="#006e6500" strokeType="INSIDE" visible="false" width="156.0" />
+      <Rectangle fx:id="rec11" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="363.0" layoutX="231.0" layoutY="208.0" onMouseEntered="#rec2En" onMouseExited="#rec2Ex" opacity="0.83" stroke="#1b6b18" strokeType="INSIDE" strokeWidth="2.0" width="185.0" />
+      <Rectangle fx:id="rec12" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="363.0" layoutX="424.0" layoutY="208.0" onMouseEntered="#rec3En" onMouseExited="#rec3Ex" opacity="0.83" stroke="#1b6b18" strokeType="INSIDE" strokeWidth="2.0" width="185.0" />
+      <Rectangle fx:id="rec13" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="363.0" layoutX="618.0" layoutY="209.0" onMouseEntered="#rec4En" onMouseExited="#rec4Ex" opacity="0.83" stroke="#1b6b18" strokeType="INSIDE" strokeWidth="2.0" width="185.0" />
+      <Rectangle fx:id="rec14" arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="363.0" layoutX="811.0" layoutY="210.0" onMouseEntered="#rec5En" onMouseExited="#rec5Ex" opacity="0.83" stroke="#1b6b18" strokeType="INSIDE" strokeWidth="2.0" width="185.0" />
+      <Button fx:id="ba4" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="651.0" layoutY="152.0" mnemonicParsing="false" onAction="#ba4Act" prefHeight="185.0" prefWidth="93.0" rotate="-5.0" style="-fx-background-color: TRANSPARENT; -fx-padding: 0;">
+         <graphic>
+            <ImageView fitHeight="267.0" fitWidth="111.0">
+               <image>
+                  <Image url="@../ba1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="book" fitHeight="170.0" fitWidth="185.0" layoutX="639.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" rotate="-20.0">
+         <image>
+            <Image url="@../book.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ba3" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="461.0" layoutY="152.0" mnemonicParsing="false" onAction="#ba3Act" prefHeight="185.0" prefWidth="93.0" rotate="10.0" style="-fx-background-color: TRANSPARENT; -fx-padding: 0;">
+         <graphic>
+            <ImageView fitHeight="267.0" fitWidth="111.0">
+               <image>
+                  <Image url="@../ba2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="penCil" fitHeight="133.0" fitWidth="86.0" layoutX="459.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true" rotate="-20.0">
+         <image>
+            <Image url="@../pen1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ba2" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="268.0" layoutY="138.0" mnemonicParsing="false" onAction="#ba2Act" prefHeight="185.0" prefWidth="93.0" rotate="10.0" style="-fx-background-color: TRANSPARENT; -fx-padding: 0;">
+         <graphic>
+            <ImageView fitHeight="267.0" fitWidth="111.0" rotate="2.0">
+               <image>
+                  <Image url="@../ba3.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="era" fitHeight="131.0" fitWidth="98.0" layoutX="261.0" layoutY="391.0" rotate="15.0">
+         <image>
+            <Image url="@../era.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ba1" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="77.0" layoutY="138.0" mnemonicParsing="false" onAction="#ba1Action" prefHeight="185.0" prefWidth="93.0" rotate="-10.0" style="-fx-background-color: TRANSPARENT; -fx-padding: 0;">
+         <graphic>
+            <ImageView fitHeight="267.0" fitWidth="111.0" rotate="10.0">
+               <image>
+                  <Image url="@../ba4.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="bag" fitHeight="144.0" fitWidth="127.0" layoutX="53.0" layoutY="399.0" rotate="-10.0">
+         <image>
+            <Image url="@../bag5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="31.0" layoutX="714.0" layoutY="619.0">
+         <image>
+            <Image url="@../yad1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ba5" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="850.0" layoutY="152.0" mnemonicParsing="false" onAction="#ba5Act" prefHeight="185.0" prefWidth="93.0" rotate="5.0" style="-fx-background-color: TRANSPARENT; -fx-padding: 0;">
+         <graphic>
+            <ImageView fitHeight="267.0" fitWidth="111.0">
+               <image>
+                  <Image url="@../ba5.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="673.0" layoutY="609.0">
+         <image>
+            <Image url="@../eye.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pen" fitHeight="136.0" fitWidth="122.0" layoutX="825.0" layoutY="407.0" rotate="-20.0">
+         <image>
+            <Image url="@../cil1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="150.0" layoutX="437.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../eng.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="278.0" layoutX="36.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../button12.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="59.0" layoutY="34.0" text="welcome">
+               <font>
+                  <Font name="Segoe Print" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="username" layoutX="169.0" layoutY="32.0" prefHeight="36.0" prefWidth="186.0">
+               <font>
+                  <Font name="Segoe Print" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="164.0" layoutX="651.0" layoutY="27.0">
+               <image>
+                  <Image url="@../image/stars.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="homebutton" fitHeight="64.0" fitWidth="70.0" layoutX="915.0" layoutY="23.0" onMouseClicked="#homebuttonMouseclic" onMouseEntered="#homebuttonMouseEnter" onMouseExited="#homebuttonExite" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/homebutton.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="673.0" layoutY="37.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="emptyStar1" fitHeight="31.0" fitWidth="32.0" visible="false">
+                     <image>
+                        <Image url="@../‏‏star2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="emptyStar2" fitHeight="31.0" fitWidth="32.0" visible="false">
+                     <image>
+                        <Image url="@../‏‏star2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="emptyStar3" fitHeight="31.0" fitWidth="32.0" visible="false">
+                     <image>
+                        <Image url="@../‏‏star2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="13.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="362.0" layoutY="610.0" opacity="0.5" stroke="#008000" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="278.0" />
+      <ImageView fitHeight="64.0" fitWidth="32.0" layoutX="654.0" layoutY="648.0">
+         <image>
+            <Image url="@../yad2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lableP" layoutX="456.0" layoutY="614.0" text=" en" textFill="GREEN">
+         <font>
+            <Font name="Berlin Sans FB" size="72.0" />
+         </font>
+      </Label>
+      <Label fx:id="p" layoutX="431.0" layoutY="614.0" text=".." textFill="GREEN">
+         <font>
+            <Font name="Berlin Sans FB" size="72.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text" layoutX="665.0" layoutY="642.0" onKeyPressed="#enter" prefHeight="42.0" prefWidth="64.0" />
+      <Label fx:id="lable2" layoutX="412.0" layoutY="614.0" text="era  er" textFill="GREEN" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="72.0" />
+         </font>
+      </Label>
+      <Label fx:id="s" layoutX="517.0" layoutY="612.0" prefWidth="48.0" text=".." textFill="GREEN" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="77.0" />
+         </font>
+      </Label>
+      <Label fx:id="lable3" layoutX="416.0" layoutY="614.0" text="boo" textFill="GREEN" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="72.0" />
+         </font>
+      </Label>
+      <Label fx:id="k" layoutX="530.0" layoutY="615.0" text=".." textFill="GREEN" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="72.0" />
+         </font>
+      </Label>
+      <Label fx:id="lable4" layoutX="412.0" layoutY="614.0" text="p  ncil" textFill="GREEN" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="72.0" />
+         </font>
+      </Label>
+      <Label fx:id="e" layoutX="452.0" layoutY="613.0" prefWidth="48.0" text=".." textFill="GREEN" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="77.0" />
+         </font>
+      </Label>
+      <Label fx:id="lable5" layoutX="439.0" layoutY="615.0" text="b  g" textFill="GREEN" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="72.0" />
+         </font>
+      </Label>
+      <Label fx:id="a" layoutX="477.0" layoutY="613.0" prefWidth="48.0" text=".." textFill="GREEN" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="77.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

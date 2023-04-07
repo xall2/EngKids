@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="engkids_adproproject.LevelsController">
+   <!--///////////////////////////////////////////////////////-->
+    <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../backg12_1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="-1.0" prefHeight="768.0" prefWidth="1024.0">
+         <children>
+            <ImageView fx:id="beer1" fitHeight="265.0" fitWidth="200.0" layoutX="127.0" layoutY="411.0">
+               <image>
+                  <Image url="@../cat2.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="1.44" specularConstant="0.42" specularExponent="28.78" surfaceScale="1.38">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                 
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <Button fx:id="L121" layoutX="217.0" layoutY="467.0" mnemonicParsing="false" onAction="#leval_3" onMouseClicked="#leval_1" opacity="0.0" prefHeight="59.0" prefWidth="62.0" text="Button" />
+            <ImageView fx:id="b1" fitHeight="64.0" fitWidth="64.0" layoutX="200.0" layoutY="546.0" onMouseClicked="#leval_1" onMouseEntered="#beer_EN1" onMouseExited="#beer_EX1">
+               <image>
+                  <Image url="@../Bl1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="L12" layoutX="462.0" layoutY="430.0" mnemonicParsing="false" onAction="#leval_3" onMouseClicked="#leval_1" opacity="0.0" prefHeight="67.0" prefWidth="70.0" text="Button" />
+            <ImageView fitHeight="281.0" fitWidth="210.0" layoutX="378.0" layoutY="271.0">
+               <image>
+                  <Image url="@../rabbit1.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="1.44" specularConstant="0.24" specularExponent="28.78" surfaceScale="1.38">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                    
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="299.0" fitWidth="224.0" layoutX="676.0" layoutY="403.0">
+               <image>
+                  <Image url="@../beer2.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="1.44" specularConstant="0.24" specularExponent="28.78" surfaceScale="1.38">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="b2" fitHeight="66.0" fitWidth="69.0" layoutX="450.0" layoutY="440.0" onMouseClicked="#leval_2" onMouseEntered="#beer_EN2" onMouseExited="#beer_EX2">
+               <image>
+                  <Image url="@../Bl2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="b3" fitHeight="71.0" fitWidth="71.0" layoutX="750.0" layoutY="547.0" onMouseClicked="#leval_3" onMouseEntered="#beer_EN3" onMouseExited="#beer_EX3">
+               <image>
+                  <Image url="@../Bl3.png" />
+               </image>
+            </ImageView>
+             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="114.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="lock2" fitHeight="89.0" fitWidth="71.0" layoutX="750.0" layoutY="531.0" onMouseClicked="#lock2Voice">
+               <image>
+                  <Image url="@../block.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lock1" fitHeight="89.0" fitWidth="71.0" layoutX="449.0" layoutY="421.0" onMouseClicked="#lock1Voice">
+               <image>
+                  <Image url="@../block.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="938.0" layoutY="737.0" mnemonicParsing="false" onAction="#member" opacity="0.0" prefHeight="31.0" prefWidth="86.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="150.0" layoutX="437.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../eng.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="278.0" layoutX="36.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../button12.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="59.0" layoutY="34.0" text="welcome">
+               <font>
+                  <Font name="Segoe Print" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="username" layoutX="169.0" layoutY="32.0" prefHeight="36.0" prefWidth="186.0">
+               <font>
+                  <Font name="Segoe Print" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="164.0" layoutX="651.0" layoutY="27.0">
+               <image>
+                  <Image url="@../image/stars.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="homebutton" fitHeight="64.0" fitWidth="70.0" layoutX="915.0" layoutY="23.0" onMouseClicked="#homebuttonMouseclic" onMouseEntered="#homebuttonMouseEnter" onMouseExited="#homebuttonExite" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/homebutton.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="673.0" layoutY="37.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="emptyStar1" fitHeight="31.0" fitWidth="32.0" visible="false">
+               <image>
+                  <Image url="@../‏‏star2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emptyStar2" fitHeight="31.0" fitWidth="32.0" visible="false">
+               <image>
+                  <Image url="@../‏‏star2.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="emptyStar3" fitHeight="31.0" fitWidth="32.0" visible="false">
+               <image>
+                  <Image url="@../‏‏star2.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="13.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+   <!--///////////////////////////////////////////////////////-->
+</AnchorPane>

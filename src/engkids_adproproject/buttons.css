@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 24, 2022, 3:06:06 PM
+    Author     : talla
+*/
+.button{
+    -fx-background-color: #FEF171;
+    -fx-shape: "M 300 250 C 400 250 450 250 550 250 C 650 250 650 400 550 400 L 300 400 C 200 400 200 250 300 250 ";
+}
+
+.card{
+    -fx-background-color: white;
+    -fx-shape: "M 300 250 C 400 250 450 250 550 250 C 650 250 650 400 550 400 L 300 400 C 200 400 200 250 300 250 ";
+    
+}
+
